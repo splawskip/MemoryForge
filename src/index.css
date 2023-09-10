@@ -1,72 +1,49 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  color: rgb(255 255 255 / 87%);
-  color-scheme: light dark;
-  background-color: #242424;
-  font-synthesis: none;
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --clr-black-hsl: 0 0% 0%;
+  --clr-black: hsl(var(--clr-black-hsl));
+  --clr-white-hsl: 0 0% 100%;
+  --clr-white: hsl(var(--clr-white-hsl));
+  --clr-dark:hsl(225deg 12% 13%);
+  --clr-focus:hsl(204deg 70% 53%);
+  --clr-heart: hsl(0deg 100% 50%);
+  --clr-sandstone: hsl(42deg 62% 75%);
+  --clr-dark-wood:  	hsl(7deg 37% 27%);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+html {
+  overflow-x: hidden;
+  font-family: Cinzel, serif;
+  font-size: 20px;
+  background-color: var(--clr-sandstone);
 }
 
-a:hover {
-  color: #535bf2;
+#root {
+  display:flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  background-image: url('./imgs/sandstone.webp');
+  background-repeat: repeat;
 }
 
-body {
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  margin: 0;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  padding: 0.6em 1.2em;
-  font-family: inherit;
-  font-size: 1em;
-  font-weight: 500;
-  cursor: pointer;
-  background-color: #1a1a1a;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  transition: border-color 0.25s;
-}
-
-button:hover {
-  border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #fff;
+@media screen and (width < 1200px) {
+  html {
+    font-size: 16px;
   }
+}
 
-  a:hover {
-    color: #747bff;
+@media screen and (width < 1024px) {
+  html {
+    font-size: 14px;
   }
+}
 
-  button {
-    background-color: #f9f9f9;
+@media screen and (width < 375px) {
+  html {
+    font-size: 12px;
   }
 }

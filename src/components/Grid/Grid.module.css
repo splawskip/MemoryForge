@@ -1,0 +1,20 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  gap: 1rem;
+  align-content: center;
+  justify-content: center;
+}
+
+@media screen and (width < 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+  }
+}
+
+@media screen and (width < 375px) {
+  html {
+    font-size: 12px;
+  }
+}
