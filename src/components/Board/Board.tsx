@@ -1,12 +1,10 @@
-// Styles.
-import styles from './Board.module.css';
 // Components.
 import Grid from '../Grid';
 
 function Board() {
   // Spit it out.
   return (
-    <div className={styles.board}>
+    <div>
       <Grid />
     </div>
   );

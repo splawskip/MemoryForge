@@ -9,15 +9,15 @@
   background-color: #c1b3b0;
   border-top: 2px solid #AD9A90;
   border-right: none;
-  border-bottom: 2px solid #1c140d;
+  border-bottom: 2px solid var(--clr-black);
   border-left: none;
   border-radius: 5px;
-  box-shadow: 0 1px 20px 0 rgb(0 0 0 / 35%);
+  box-shadow: 0 1px 20px 0 hsl(var(--clr-black-hsl) / 35%);
 }
 
 .wrap:focus-visible {
   outline: 0;
-  box-shadow: -1px 2px 17px 2px rgb(31 197 255 / 100%);
+  box-shadow: -1px 2px 17px 2px var(--clr-focus);
 }
 
 .in {
@@ -31,7 +31,7 @@
 }
 
 .border {
-  display: table;
+  display: flex;
   width: 100%;
   height: 35px;
   min-height: 35px;
@@ -43,7 +43,7 @@
   color: #fff;
   text-align: center;
   text-decoration: none;
-  text-shadow: 1px 1px #000;
+  text-shadow: 1px 1px var(--clr-black);
   text-transform: uppercase;
   letter-spacing: 1px;
   background: linear-gradient(to bottom,
@@ -53,17 +53,18 @@
   #661f91);
   background-color: #BC22C7;
   border-radius: 2px;
-  box-shadow: 0 2px 6px 0 #331e0b;
+  box-shadow: 0 2px 6px 0 var(--clr-black);
 }
 
 .text {
-  display: table-cell; width: 100%;
+  display: flex;
+  width: 100%;
   padding: 9px 24px;
   padding: .3rem 1rem;
   font-size: 20px;
   font-size: 1rem;
   font-weight: 700;
-  text-shadow: 0 0 4px #000, 0 0 8px #000;
+  text-shadow: 0 0 4px var(--clr-black), 0 0 8px var(--clr-black);
   text-transform: uppercase;
   letter-spacing: 2px;
   vertical-align: middle;

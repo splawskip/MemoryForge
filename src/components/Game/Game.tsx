@@ -7,6 +7,7 @@ import Button from '../Button';
 import GameStatusProvider from '../GameStatusProvider';
 import Board from '../Board';
 import VisuallyHidden from '../VisuallyHidden';
+import Footer from '../Footer';
 
 function Game() {
   // Spit it out.
@@ -18,6 +19,7 @@ function Game() {
       </Heading>
       <Button>Play Again</Button>
       <Board />
+      <Footer />
     </GameStatusProvider>
   );
 }
